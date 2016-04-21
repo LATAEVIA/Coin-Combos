@@ -28,17 +28,17 @@ public class TestCoin {
   }
 
   @Test
-  public void runCoin_testForMultipleNickel_3_2_1_0() {
+  public void runCoin_testForMultipleNickel_0_0_1_0() {
     Coin myApp = new Coin();
-    Integer[] expected = {3,2,1,0};
-    Integer[] actualReturnedArray = myApp.runCoin(100);
+    Integer[] expected = {0,0,1,0};
+    Integer[] actualReturnedArray = myApp.runCoin(5);
     assertEquals(expected, actualReturnedArray);
   }
 
   @Test
-  public void runCoin_testForMultiplePennie_3_2_1_1() {
+  public void runCoin_testForMultiplePennie_4_0_0_1() {
     Coin myApp = new Coin();
-    Integer[] expected = {3,2,1,1};
+    Integer[] expected = {4,0,0,1};
     Integer[] actualReturnedArray = myApp.runCoin(101);
     assertEquals(expected, actualReturnedArray);
   }

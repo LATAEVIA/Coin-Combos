@@ -10,6 +10,38 @@ public class TestCoin {
      Integer[] actualReturnedArray = myApp.runCoin(25); // we expect: [1,0,0,0]
      assertEquals(expected, actualReturnedArray);
   }
+
+  @Test
+  public void runCoin_testForMultipleQuarter_3_0_0_0() {
+    Coin myApp = new Coin();
+    Integer[] expected = {3,0,0,0};
+    Integer[] actualReturnedArray = myApp.runCoin(75);
+    assertEquals(expected, actualReturnedArray);
+  }
+
+  @Test
+  public void runCoin_testForMultipleDime_3_2_0_0() {
+    Coin myApp = new Coin();
+    Integer[] expected = {3,2,0,0};
+    Integer[] actualReturnedArray = myApp.runCoin(95);
+    assertEquals(expected, actualReturnedArray);
+  }
+
+  @Test
+  public void runCoin_testForMultipleNickel_3_2_1_0() {
+    Coin myApp = new Coin();
+    Integer[] expected = {3,2,1,0};
+    Integer[] actualReturnedArray = myApp.runCoin(100);
+    assertEquals(expected, actualReturnedArray);
+  }
+
+  @Test
+  public void runCoin_testForMultiplePennie_3_2_1_1() {
+    Coin myApp = new Coin();
+    Integer[] expected = {3,2,1,1};
+    Integer[] actualReturnedArray = myApp.runCoin(101);
+    assertEquals(expected, actualReturnedArray);
+  }
 }
 //
 //
